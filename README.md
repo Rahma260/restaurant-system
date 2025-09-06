@@ -100,6 +100,6 @@ npm run dev
 
 **Project Author:** Rahma Khaled
 
-* Email: [rahma@example.com](mailto:rahmakh248@gmail.com)
+* Email: [rahmakh248@gmail.com](mailto:rahmakh248@gmail.com)
 * GitHub: [github.com/Rahma260](https://github.com/Rahma260)
 ---
