@@ -9,7 +9,7 @@
           "name": "صواني البط 1",
           "description": "نصف بطه ونصف كفته وربع طرب تقدم مع ٢ ارز وخضروات وخبز وسلطات",
           "price": "EGP 979.00",
-          "image": "../../public/images/صواني-بط.jpg",
+          "image": "/images/swanybat.jpg",
           "rating": 4.5
         }
       ]
@@ -23,7 +23,7 @@
           "name": "فرخة مشوية  ",
           "description": "فرخة كاملة متبلة بتتبيلة خاصة، مشوية   حتى النضج بطعم مدخن",
           "price": "EGP 200.00",
-          "image": "../../public/images/فرخة-مشوية.jpg",
+          "image": "/images/far5amashwia.jpg",
           "rating": 4.7
         },
         {
@@ -31,7 +31,7 @@
           "name": "فرخة شيش طاووق ",
           "description": "قطع فراخ متبلة ومشوية  ، طرية من الداخل ومحمرة من الخارج",
           "price": "EGP 350.00",
-          "image": "../../public/images/شيش-طاووق.jpg",
+          "image": "/images/shishtawooq.jpg",
           "rating": 4.3
         },
         {
@@ -39,7 +39,7 @@
           "name": "كفتة كندوز مشوي  ",
           "description": "أسياخ من اللحم الكندوز المتبل، مشوية   بطعم شرقي أصيل ومذاق مميز",
           "price": "EGP 600.00",
-          "image": "../../public/images/كفتة-كندوز.jpg",
+          "image": "/images/koftakandooz.jpg",
           "rating": 4.8
         },
         {
@@ -47,7 +47,7 @@
           "name": "كفتة ضأن مشوي  ",
           "description": "كفتة ضأن متبلة بتوابل بلدي، مشوية   بنكهة لحم غنية ودسمة",
           "price": "EGP 280.00",
-          "image": "../../public/images/كفتة-ضان.jpg",
+          "image": "/images/koftadany.jpg",
           "rating": 4.4
         },
         {
@@ -55,7 +55,7 @@
           "name": "كباب ضأن مشوي  ",
           "description": "مكعبات لحم ضأن مشوية  ، متبلة ومليئة بالعصارة",
           "price": "EGP 560.00",
-          "image": "../../public/images/كباب-مشوي.jpg",
+          "image": "/images/kbabmashwi.jpg",
           "rating": 4.6
         },
         {
@@ -63,7 +63,7 @@
           "name": "ريش ضأن مشوي  ",
           "description": "ريش ضأن مشوية  ، طرية وعصارية بطعم مدخن",
           "price": "EGP 600.00",
-          "image": "../../public/images/ريش.jpg",
+          "image": "/images/ryash.jpg",
           "rating": 4.7
         },
         {
@@ -71,7 +71,7 @@
           "name": "طرب مشوي  ",
           "description": "مزيج من اللحم والدهن ملفوف ومشوي  ، بطعم غني ودسم",
           "price": "EGP 780.00",
-          "image": "../../public/images/طرب.jpg",
+          "image": "/images/tarb.jpg",
           "rating": 4.5
         },
         {
@@ -79,7 +79,7 @@
           "name": "دبابيس فراخ مشوية ",
           "description": "دبابيس دجاج متبلة ومشوية  ، طرية من الداخل ومقرمشة من الخارج",
           "price": "EGP 250.00",
-          "image": "../../public/images/دبابيس.jpg",
+          "image": "/images/dbabes.jpg",
           "rating": 4.3
         },
         {
@@ -87,7 +87,7 @@
           "name": "بانيه فراخ شرائح مشوي ",
           "description": "شرائح بانيه فراخ متبلة، مشوية   بطعم صحي وخفيف ومليء بالنكهة",
           "price": "EGP 400.00",
-          "image": "../../public/images/بانيه.jpg",
+          "image": "/images/baneh.jpg",
           "rating": 4.2
         }
       ]
@@ -101,7 +101,7 @@
           "name": "نصف فرخة و طرب و كفتة",
           "description": "وجبة نصف فرخه ، ربع كيلو طرب، ربع كيلو كفته تقدم مع 2 ارز وخبز وسلطات",
           "price": "EGP 470.00",
-          "image": "../../public/images/وجبة1.jpg",
+          "image": "/images/wagba1.jpg",
           "rating": 4.8
         },
         {
@@ -109,7 +109,7 @@
           "name": "ربع فرخة ورك",
           "description": "‫1\\4‬ فرخة ورك، أرز",
           "price": "EGP 135.00",
-          "image": "../../public/images/وجبة2.jpg",
+          "image": "/images/wagba2.jpg",
           "rating": 4.2
         },
         {
@@ -117,7 +117,7 @@
           "name": "ربع فرخة صدر",
           "description": "1/4 فرخة صدر، أرز  تقدم مع 1 أرز وسلطة خضراء وسلطة طحينة وخبز",
           "price": "EGP 145.00",
-          "image": "../../public/images/وجبة3.jpg",
+          "image": "/images/wagba3.jpg",
           "rating": 4.3
         },
         {
@@ -125,7 +125,7 @@
           "name": "ربع فرخة ورك و كفتة",
           "description": "1\\4‬ فراخ ورك، 1/8‬ كفتة   تقدم مع 1 أرز وسلطة خضراء وسلطة طحينة وخبز",
           "price": "EGP 195.00",
-          "image": "../../public/images/وجبة4.jpg",
+          "image": "/images/wagba4.jpg",
           "rating": 4.4
         },
         {
@@ -133,7 +133,7 @@
           "name": "ربع فرخة صدر و كفتة",
           "description": "1/4 فراخ صدر، 1/8 كفته و تقدم مع 1 أرز وسلطة خضراء وسلطة طحينة وخبز",
           "price": "EGP 200.00",
-          "image": "../../public/images/وجبة5.jpg",
+          "image": "/images/wagba5.jpg",
           "rating": 4.3
         },
         {
@@ -141,7 +141,7 @@
           "name": "نصف فرخة",
           "description": "نصف فراخ تقدم مع 1 أرز وسلطة خضراء وسلطة طحينة وخبز",
           "price": "EGP 205.00",
-          "image": "../../public/images/وجبة6.jpg",
+          "image": "/images/wagba6.jpg",
           "rating": 4.5
         }
       ]
@@ -155,7 +155,7 @@
           "name": "صينية رقم 1",
           "description": "ربع طرب + نصف كفتة + فرخة ,جميع الصواني تقدم مع ارز و خبز و سلطات",
           "price": "EGP 875.00",
-          "image": "../../public/images/صينية1.png",
+          "image": "/images/s1.png",
           "rating": 4.5
         },
         {
@@ -163,7 +163,7 @@
           "name": "صينية رقم 2",
           "description": "ربع كفتة + ربع كباب + فرد حمام محشي",
           "price": "EGP 680.00",
-          "image": "../../public/images/صينية2.jpg",
+          "image": "/images/s2.jpg",
           "rating": 4.4
         },
         {
@@ -171,7 +171,7 @@
           "name": "صينية رقم 3",
           "description": "ربع ممبار + نصف كفتة + نصف فرخة، جميع الصواني تقدم مع ارز و خبز و سلطات",
           "price": "EGP 600.00",
-          "image": "../../public/images/صينية3.jpg",
+          "image": "/images/s3.jpg",
           "rating": 4.3
         }
       ]
@@ -185,7 +185,7 @@
           "name": "طاجن لحمة بالبصل",
           "description": "طاجن من اللحم المطهو مع البصل في الفرن، بطعم غني وصلصة",
           "price": "EGP 265.00",
-          "image": "../../public/images/طاجن1.jpg",
+          "image": "/images/tagen1.jpg",
           "rating": 4.4
         },
         {
@@ -193,7 +193,7 @@
           "name": "طاجن كباب حلة",
           "description": "قطع لحم طرية مطهية مع البصل والبهارات في طاجن يقدم بنكهة مصرية أصيلة.",
           "price": "EGP 275.00",
-          "image": "../../public/images/طاجن2.jpg",
+          "image": "/images/tagen2.jpg",
           "rating": 4.3
         },
         {
@@ -201,7 +201,7 @@
           "name": "طاجن خضار باللحمة",
           "description": "خضار موسمي مع مكعبات اللحم، مطهو في الطاجن بنكهات شرقية",
           "price": "EGP 265.00",
-          "image": "../../public/images/طاجن3.jpg",
+          "image": "/images/tagen3.jpg",
           "rating": 4.2
         }
       ]
@@ -215,7 +215,7 @@
           "name": "سلطة خضراء",
           "description": "خليط طازج من الخس والخيار والطماطم مع عصير ليمون طازج وزيت زيتون.",
           "price": "EGP 20.00",
-          "image": "../../public/images/سلطة.jpg",
+          "image": "/images/salad.jpg",
           "rating": 4.0
         },
         {
@@ -223,7 +223,7 @@
           "name": "سلطة طحينة",
           "description": "طحينة ناعمة ممزوجة بالخل والليمون والثوم، تقدم بجانب المشويات",
           "price": "EGP 20.00",
-          "image": "../../public/images/طحينة.png",
+          "image": "/images/t7ena.png",
           "rating": 4.1
         },
         {
@@ -231,7 +231,7 @@
           "name": "بابا غنوج",
           "description": "باذنجان مشوي مهروس مع طحينة وثوم، سلطة غنية بالنكهة الشرقية.",
           "price": "EGP 25.00",
-          "image": "../../public/images/غنوج.jpg",
+          "image": "/images/8noog.jpg",
           "rating": 4.2
         },
         {
@@ -239,7 +239,7 @@
           "name": "طرشي",
           "description": "خليط من الخضار المخلل بخل وملح، طعم حادق ومنعش بجانب الأكل",
           "price": "EGP 15.00",
-          "image": "../../public/images/طرشي.jpg",
+          "image": "/images/torshy.jpg",
           "rating": 3.9
         }
       ]
@@ -253,7 +253,7 @@
           "name": "زجاجة مياة صغيرة",
           "description": "مياه معدنية باردة ومنعشة بحجم صغير لتروية العطش مع الأكل",
           "price": "EGP 12.00",
-          "image": "../../public/images/زجاجة1.jpg",
+          "image": "/images/zogag1.jpg",
           "rating": 4.0
         },
         {
@@ -261,7 +261,7 @@
           "name": "زجاجة مياة كبيرة",
           "description": "مياه معدنية باردة بحجم كبير لتشاركها مع الأهل والأصدقاء",
           "price": "EGP 20.00",
-          "image": "../../public/images/زجاجة2.jpg",
+          "image": "/images/zogaga2.jpg",
           "rating": 4.1
         },
         {
@@ -269,7 +269,7 @@
           "name": "مشروب غازي",
           "description": "مشروبات غازية متنوعة بطعم بارد ومنعش بجانب الوجبة",
           "price": "EGP 30.00",
-          "image": "../../public/images/زجاجة3.png",
+          "image": "/images/zogaga3.png",
           "rating": 4.2
         }
       ]
