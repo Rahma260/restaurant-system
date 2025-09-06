@@ -11,10 +11,10 @@ function MobileMenu() {
     navigate("/");
   };
   const menuItems = [
-    { name: "الرئيسية", id: "home", path: "/" },
-    { name: "تواصل معنا", path: "/contact" },
-    { name: "الفئات", id: "categories", path: "/products/1" },
-    { name: "من نحن", path: "/about" },
+    { id: 1, name: "الرئيسية", id: "home", path: "/" },
+    { id: 2, name: "تواصل معنا", path: "/contact" },
+    { id: 3, name: "الفئات", id: "categories", path: "/products/1" },
+    { id: 4, name: "من نحن", path: "/about" },
   ];
   return (
     <>

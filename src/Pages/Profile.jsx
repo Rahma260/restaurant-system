@@ -10,7 +10,7 @@ export default function Profile() {
     return (
       <>
         <Navbar />
-        <div className="flex justify-center items-center h-screen">
+        <div className="flex justify-center items-center min-h-screen">
           <p className="text-gray-600 text-lg">لا يوجد بيانات مستخدم</p>
         </div>
         <Footer />

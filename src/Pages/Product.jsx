@@ -90,7 +90,7 @@ function Product() {
     <>
       <Navbar />
 
-      <div className="mt-28 px-6 py-6">
+      <div className="mt-28 px-6 py-6 min-h-screen">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}

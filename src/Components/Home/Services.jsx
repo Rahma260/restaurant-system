@@ -6,21 +6,25 @@ function Services() {
   const services = [
     {
       icon: <UtensilsCrossed className="w-12 h-12 text-red-900" />,
+      id: 1,
       title: "مأكولات أصيلة",
       description: "استمتع بنكهات المطبخ الشرقي المحضرة بكل حب وتقاليد عريقة.",
     },
     {
       icon: <Truck className="w-12 h-12 text-red-900" />,
+      id: 2,
       title: "توصيل سريع",
       description: "نوصلك وجباتك المفضلة طازجة وساخنة حتى باب منزلك.",
     },
     {
       icon: <Star className="w-12 h-12 text-red-900" />,
+      id: 3,
       title: "جودة مميزة",
       description: "نستخدم أفضل المكونات لنضمن لك مذاقاً لا يُنسى في كل طبق.",
     },
     {
       icon: <Smartphone className="w-12 h-12 text-red-900" />,
+      id: 4,
       title: "طلب سهل",
       description: "اطلب في أي وقت عبر نظامنا البسيط وسهل الاستخدام.",
     },
@@ -42,7 +46,7 @@ function Services() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <motion.div
-              key={index}
+              key={service.id}
               className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center text-center cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-xl"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}

@@ -7,8 +7,8 @@ function FooterLinkSection({ title, links }) {
         {title}
       </h2>
       <ul className="text-gray-500 font-medium">
-        {links.map((link, index) => (
-          <li key={index} className="mb-4 last:mb-0">
+        {links.map((link) => (
+          <li key={link.label} className="mb-4 last:mb-0">
             <Link
               to={link.link}
               className="hover:underline transition duration-300 hover:text-red-900"
@@ -17,6 +17,7 @@ function FooterLinkSection({ title, links }) {
             </Link>
           </li>
         ))}
+
       </ul>
     </div>
   );

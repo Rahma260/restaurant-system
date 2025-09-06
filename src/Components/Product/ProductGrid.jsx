@@ -15,7 +15,7 @@ function ProductGrid({ filteredItems, category, favorites, toggleFavorite, handl
 
           return (
             <ProductCard
-              key={`${category?.id || "cat"}-${item.id}`}
+              key={`${item.categoryId}-${item.id}`}
               item={item}
               category={category}
               isFavorite={isFavorite}

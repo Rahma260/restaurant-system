@@ -7,7 +7,7 @@ function About() {
     <>
       <Navbar />
 
-      <div className="mt-28 px-6 py-12 max-w-6xl mx-auto space-y-12">
+      <div className="mt-28 px-6 py-12 max-w-6xl mx-auto space-y-12 min-h-screen">
         <div className="text-gray-700 leading-relaxed grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <h2 className="text-3xl font-bold text-red-950 mb-4">قصتنا</h2>

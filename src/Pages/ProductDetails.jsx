@@ -49,7 +49,7 @@ function ProductDetails() {
     <>
       <Navbar />
       {message}
-      <div className="max-w-6xl mx-auto mt-28 px-6 lg:px-0 flex flex-col lg:flex-row gap-12">
+      <div className="max-w-6xl mx-auto mt-28 px-6 lg:px-0 flex flex-col lg:flex-row gap-12 min-h-screen">
         <ProductImage image={item.image} name={item.name} />
         <ProductInfo
           item={item}

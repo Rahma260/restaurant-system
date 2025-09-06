@@ -18,7 +18,7 @@ function SimilarProducts({ similarProducts, favorites, handleToggleFavorite, add
       <div ref={sliderRef} className="flex gap-6 overflow-x-auto scrollbar-hide py-4">
         {similarProducts.map((prod) => (
           <ProductCard
-            key={prod.id}
+            key={`${categoryId}-${prod.id}`}
             prod={prod}
             categoryId={categoryId}
             isFavorite={favorites.some(fav => fav.id === prod.id)}
