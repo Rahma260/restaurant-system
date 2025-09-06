@@ -25,7 +25,7 @@ function About() {
 
           <div className="w-full mt-8 h-64 rounded-lg overflow-hidden shadow-lg">
             <video
-              src="../public/video/about.mp4"
+              src="/video/about.mp4"
               controls
               autoPlay
               loop
