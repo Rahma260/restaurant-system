@@ -1,20 +1,5 @@
 # Restaurant Project
 
-## Table of Contents
-
-* [Project Overview](#project-overview)
-* [Features](#features)
-* [Technologies Used](#technologies-used)
-* [Installation](#installation)
-* [Usage](#usage)
-* [Project Structure](#project-structure)
-* [Screenshots](#screenshots)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-
----
-
 ## Project Overview
 
 **Hagoga Restaurant** is a modern, responsive web application for a restaurant management and ordering system. It is designed to provide users with a seamless experience for browsing the menu, placing orders, and discovering the restaurant’s offerings online. The project emphasizes clean UI/UX design, fast performance, and responsiveness across all devices.
