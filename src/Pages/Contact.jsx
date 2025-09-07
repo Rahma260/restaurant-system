@@ -40,8 +40,12 @@ function Contact() {
             <p className="flex items-center text-gray-600 gap-2">
               <Mail className="text-red-950" size={20} /> البريد الإلكتروني: info@example.com
             </p>
+            <h3 className="text-xl font-semibold text-gray-800 mt-8">خريطة الموقع</h3>
+            <div className="w-full h-64 rounded-lg overflow-hidden shadow-lg">
+              <iframe title="Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.4663752878287!2d31.381346900000004!3d30.0808269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145817f6441278d1%3A0xfd3b9facdd09dce9!2z2K3YrNmI2KzYqQ!5e0!3m2!1sen!2seg!4v1757090311485!5m2!1sen!2seg" width="100%" height="100%" style={{ border: 0 }} loading="lazy" allowFullScreen referrerPolicy="no-referrer-when-downgrade" >
+              </iframe>
+            </div>
           </div>
-
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-semibold mb-4 text-gray-800">أرسل رسالة</h3>
             <form className="space-y-4" onSubmit={handleSubmit}>
@@ -91,7 +95,7 @@ function Contact() {
             </form>
           </div>
         </div>
-      </div>
+      </div >
 
       <Footer />
     </>
