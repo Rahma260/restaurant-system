@@ -1,22 +1,33 @@
 import { createContext, useContext, useState, useEffect } from "react";
+import { useUser } from "./UserContext";
+import Loading from "../Loading";
 
 const CartContext = createContext();
 
-export const CartProvider = ({ children }) => {
-  const [cartItems, setCartItems] = useState(() => {
-    const savedCart = localStorage.getItem("cart");
-    return savedCart ? JSON.parse(savedCart) : [];
-  });
+export const useCart = () => useContext(CartContext);
 
+export const CartProvider = ({ children }) => {
+  const { user, loading } = useUser();
+  const storageKey = user ? `cart_${user.email}` : "cart_guest";
+
+  const [cartItems, setCartItems] = useState([]);
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cartItems));
-  }, [cartItems]);
+    if (loading) return;
+    const savedCart = localStorage.getItem(storageKey);
+    setCartItems(savedCart ? JSON.parse(savedCart) : []);
+  }, [storageKey, loading]);
+
+  // حفظ أي تغيير
+  useEffect(() => {
+    if (loading) return;
+    localStorage.setItem(storageKey, JSON.stringify(cartItems));
+  }, [cartItems, storageKey, loading]);
 
   const addToCart = (product) => {
     setCartItems((prevCart) => {
-      const uniqueKey = `${product.name}_${product.name}`;
+      const uniqueKey = `${product.id}_${product.name}`;
       const existingItem = prevCart.find((item) => item.uniqueKey === uniqueKey);
 
       if (existingItem) {
@@ -30,13 +41,13 @@ export const CartProvider = ({ children }) => {
       }
     });
 
-    setMessage(`تمت إضافته للسلة`);
+    setMessage(` تمت إضافة المنتج للسلة`);
     setTimeout(() => setMessage(""), 3000);
   };
 
   const removeFromCart = (uniqueKey) => {
     setCartItems((prev) => prev.filter((item) => item.uniqueKey !== uniqueKey));
-    setMessage(`تم حذفه من لسلة`);
+    setMessage(`تم حذف المنتج من السلة`);
     setTimeout(() => setMessage(""), 3000);
   };
 
@@ -52,8 +63,11 @@ export const CartProvider = ({ children }) => {
 
   const clearCart = () => {
     setCartItems([]);
+    setMessage(`تم مسح السلة بالكامل`);
+    setTimeout(() => setMessage(""), 3000);
   };
 
+  if (loading) return <Loading />;
   return (
     <CartContext.Provider
       value={{
@@ -69,5 +83,3 @@ export const CartProvider = ({ children }) => {
     </CartContext.Provider>
   );
 };
-
-export const useCart = () => useContext(CartContext);

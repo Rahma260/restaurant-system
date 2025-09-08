@@ -1,10 +1,12 @@
-import { FaUser, FaEnvelope, FaPhone, FaAddressBook } from "react-icons/fa";
+import { FaUser, FaEnvelope, FaPhone, FaAddressBook, FaShoppingBag } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 import { useUser } from "../Components/Context/UserContext";
 
 export default function Profile() {
   const { user } = useUser();
+  const navigate = useNavigate();
 
   if (!user) {
     return (
@@ -21,7 +23,7 @@ export default function Profile() {
   return (
     <>
       <Navbar />
-      <div className="max-w-md mx-auto mt-28 mb-6 bg-white  h-full shadow-lg rounded-2xl p-6">
+      <div className="max-w-md mx-auto mt-28 mb-6 bg-white shadow-lg rounded-2xl p-6">
         <div className="flex flex-col items-center">
           <div className="w-24 h-24 rounded-full bg-red-100 flex items-center justify-center text-4xl text-red-950">
             <FaUser />
@@ -44,6 +46,13 @@ export default function Profile() {
             <span>{user.address}</span>
           </div>
         </div>
+
+        <button
+          onClick={() => navigate("/orders")}
+          className="mt-8 w-full flex items-center justify-center gap-2 bg-red-950 text-white py-3 rounded-lg font-semibold hover:bg-white hover:text-red-950 hover:border-2 hover:border-red-950 transition duration-300"
+        >
+          <FaShoppingBag /> عرض الطلبات
+        </button>
       </div>
       <Footer />
     </>

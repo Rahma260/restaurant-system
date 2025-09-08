@@ -1,11 +1,13 @@
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 import { useFavorites } from "../Components/Context/FavoritesContext";
-import { Trash2, Heart } from "lucide-react";
+import { useCart } from "../Components/Context/CartContext";
+import { Trash2, Heart, ShoppingCart } from "lucide-react";
 import { Link } from "react-router-dom";
 
 function Favorites() {
   const { favorites, toggleFavorite, clearFavorites } = useFavorites();
+  const { addToCart } = useCart();
 
   return (
     <>
@@ -35,18 +37,33 @@ function Favorites() {
                   />
                   <div>
                     <Link to={`/products/${item.categoryId}/${item.id}`}>
-                      <h3 className="font-semibold hover:text-red-950 hover:underline">{item.name}</h3>
+                      <h3 className="font-semibold hover:text-red-950 hover:underline">
+                        {item.name}
+                      </h3>
                     </Link>
-                    <p>{item.price}</p>
+                    <p>{item.price} EGP</p>
                   </div>
                 </div>
 
-                <button
-                  onClick={() => toggleFavorite(item)}
-                  className="text-red-500 hover:text-red-700"
-                >
-                  <Trash2 />
-                </button>
+                <div className="flex items-center gap-3">
+                  {/* زر إضافة للعربة */}
+                  <button
+                    onClick={() => addToCart(item)}
+                    className="text-green-600 hover:text-green-800"
+                    title="إضافة إلى العربة"
+                  >
+                    <ShoppingCart />
+                  </button>
+
+                  {/* زر الحذف */}
+                  <button
+                    onClick={() => toggleFavorite(item)}
+                    className="text-red-500 hover:text-red-700"
+                    title="إزالة من المفضلة"
+                  >
+                    <Trash2 />
+                  </button>
+                </div>
               </div>
             ))}
 

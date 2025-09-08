@@ -1,14 +1,22 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
-  const [user, setUser] = useState(() => {
-    return JSON.parse(localStorage.getItem("user")) || null;
-  });
-  const [token, setToken] = useState(() => {
-    return localStorage.getItem("token") || null;
-  });
+  const [user, setUser] = useState(null);
+  const [token, setToken] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const savedUser = JSON.parse(localStorage.getItem("user"));
+    const savedToken = localStorage.getItem("token");
+
+    if (savedUser && savedToken) {
+      setUser(savedUser);
+      setToken(savedToken);
+    }
+    setLoading(false);
+  }, []);
 
   const register = (formData) => {
     const users = JSON.parse(localStorage.getItem("users") || "[]");
@@ -54,7 +62,7 @@ export const UserProvider = ({ children }) => {
   };
 
   return (
-    <UserContext.Provider value={{ user, token, register, login, logout }}>
+    <UserContext.Provider value={{ user, token, register, login, logout, loading }}>
       {children}
     </UserContext.Provider>
   );

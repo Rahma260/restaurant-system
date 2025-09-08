@@ -83,7 +83,9 @@ function Cart() {
                 مسح السلة
               </button>
               <button className="px-6 py-2 bg-red-950 text-white rounded hover:bg-red-900">
-                إتمام الشراء
+                <Link to="/checkout">
+                  إتمام الشراء
+                </Link>
               </button>
             </div>
           </div>

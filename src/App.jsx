@@ -11,37 +11,63 @@ import { CartProvider } from "./Components/Context/CartContext";
 import { FavoritesProvider } from "./Components/Context/FavoritesContext";
 import { UserProvider } from "./Components/Context/UserContext";
 import { LoadingProvider } from "./Components/Context/LoadingContext";
+import { OrdersProvider } from "./Components/Context/OrdersContext";
 import ProtectedRoute from './Components/ProtectedRoutes';
 import GlobalMessage from "./Components/Message";
 import Loading from "./Components/Loading";
 import Contact from './Pages/Contact';
 import About from './Pages/About';
 import Profile from './Pages/Profile';
+import Checkout from './Pages/Checkout';
+import MyOrders from './Pages/MyOrders';
+import PaymentPage from './Pages/Payment';
 function App() {
   return (
     <UserProvider>
       <LoadingProvider>
         <CartProvider>
           <FavoritesProvider>
-            <Loading />
-            <GlobalMessage />
-            <Router>
-              <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/register' element={<Register />} />
-                <Route path='/login' element={<Login />} />
-                <Route path="/products" element={<Product />} />
-                <Route path="/products/:categoryId"
-                  element={<Product key={window.location.pathname} />}
-                />
-                <Route path="/products/:categoryId/:itemId" element={<ProductDetails key={useParams().itemId} />} />
-                <Route path="/cart" element={<ProtectedRoute><Cart /></ProtectedRoute>} />
-                <Route path="/favorite" element={<ProtectedRoute><Favorites /></ProtectedRoute>} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/profile" element={<Profile />} />
-              </Routes>
-            </Router>
+            <OrdersProvider>
+              <Loading />
+              <GlobalMessage />
+              <Router>
+                <Routes>
+                  <Route path='/' element={<Home />} />
+                  <Route path='/register' element={<Register />} />
+                  <Route path='/login' element={<Login />} />
+                  <Route path="/products" element={<Product />} />
+                  <Route
+                    path="/products/:categoryId"
+                    element={<Product key={window.location.pathname} />}
+                  />
+                  <Route
+                    path="/products/:categoryId/:itemId"
+                    element={<ProductDetails key={useParams().itemId} />}
+                  />
+                  <Route
+                    path="/cart"
+                    element={<ProtectedRoute><Cart /></ProtectedRoute>}
+                  />
+                  <Route
+                    path="/favorite"
+                    element={<ProtectedRoute><Favorites /></ProtectedRoute>}
+                  />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/profile" element={<Profile />} />
+                  <Route
+                    path="/checkout"
+                    element={<ProtectedRoute><Checkout /></ProtectedRoute>}
+                  />
+                  <Route
+                    path="/orders"
+                    element={<ProtectedRoute><MyOrders /></ProtectedRoute>}
+                  />
+                  <Route path="/payment" element={<ProtectedRoute> <PaymentPage /></ProtectedRoute>} />
+
+                </Routes>
+              </Router>
+            </OrdersProvider>
           </FavoritesProvider>
         </CartProvider>
       </LoadingProvider>

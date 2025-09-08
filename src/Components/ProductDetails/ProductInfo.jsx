@@ -23,10 +23,16 @@ function ProductInfo({
 
       <button
         onClick={handleAddToCart}
-        className="mt-4 px-8 py-3 bg-red-950 text-white font-semibold rounded-full hover:bg-white hover:text-red-950 border-2 border-red-950 transition flex items-center gap-2 w-fit"
+        className="mt-4 px-8 py-3 bg-red-900 text-white font-semibold rounded-full hover:bg-white hover:text-red-950 border-2 border-red-950 transition flex items-center gap-2 w-fit"
       >
         <ShoppingCart className="w-5 h-5" />
         أضف إلى السلة
+      </button>
+      <button
+        className="mt-4 px-14 py-3 bg-red-900 text-white font-semibold rounded-full hover:bg-white hover:text-red-950 border-2 border-red-950 transition flex items-center gap-2 w-fit">
+        <Link to="/checkout">
+          اتمام الطلب
+        </Link>
       </button>
 
       <Link to={`/products/${categoryId}`} className="mt-4 text-gray-700 hover:text-red-950 underline">
