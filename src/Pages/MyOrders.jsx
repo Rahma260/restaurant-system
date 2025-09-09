@@ -32,7 +32,7 @@ export default function MyOrders() {
   return (
     <>
       <Navbar />
-      <div className="p-6 mt-20 min-h-screen bg-gray-50" dir="rtl">
+      <div className="p-6 mt-20 min-h-screen bg-white" dir="rtl">
         <h2 className="text-2xl font-bold mb-6 text-red-950">طلباتي</h2>
 
         {orders.length === 0 ? (

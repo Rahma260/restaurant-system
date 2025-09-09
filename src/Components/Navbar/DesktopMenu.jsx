@@ -15,6 +15,8 @@ function DesktopMenu() {
     { id: 2, name: "تواصل معنا", path: "/contact" },
     { id: 3, name: "الفئات", id: "categories", path: "/products/1" },
     { id: 4, name: "من نحن", path: "/about" },
+    { id: 5, name: "طلباتي", path: "/orders" },
+
   ];
   return (
     <div className="hidden lg:flex flex-1 items-center justify-center gap-4 xl:gap-8">
