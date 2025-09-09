@@ -13,11 +13,14 @@ function ProductCard({ item, category, isFavorite, toggleFavorite, handleAddToCa
     >
       <div className="flex justify-center mt-6">
         <div className="w-60 h-60 rounded-full bg-gradient-to-br from-red-50 to-red-200 flex items-center justify-center">
-          <img
-            src={item.image || "/images/placeholder.png"}
-            alt={item.name}
-            className="w-52 h-52 object-cover rounded-full"
-          />
+          <Link to={`/products/${item.categoryId}/${item.id}`}>
+            <img
+              src={item.image || "/images/placeholder.png"}
+              alt={item.name}
+              className="w-52 h-52 object-cover rounded-full"
+            />
+          </Link>
+
         </div>
       </div>
 
@@ -69,12 +72,13 @@ function ProductCard({ item, category, isFavorite, toggleFavorite, handleAddToCa
         <button
           onClick={(e) => {
             e.preventDefault();
-            navigate(`/products/${category.id}/${item.id}`);
+            navigate(`/products/${item.categoryId}/${item.id}`);
           }}
           className="mt-4 px-6 py-2 bg-red-950 text-white font-semibold rounded-md hover:bg-white border-2 hover:text-red-950 hover:border-red-950 transition"
         >
           اطلب الآن
         </button>
+
 
       </div>
     </Link>
