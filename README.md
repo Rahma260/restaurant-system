@@ -22,6 +22,7 @@
 * **Search Functionality:** Search for dishes by name.
 * **Shopping Cart:** Add and remove items easily.
 * **Wishlist:** Add and remove items easily.
+* **order:** make order with fake payment page and track order status 
 * **Interactive UI:** Hover effects, animations, and smooth transitions.
 * **Modern Styling:** Tailwind CSS ensures a clean, professional, and consistent UI.
 
@@ -93,6 +94,13 @@ npm run dev
 * **Login & Register
   <img width="1920" height="868" alt="image" src="https://github.com/user-attachments/assets/bf88bb4c-7b4e-4dae-9793-eafe57b79f32" />
   <img width="1920" height="1107" alt="image" src="https://github.com/user-attachments/assets/0544b629-97a6-4b56-abfb-497730a56e6e" />
+  
+* **Orders
+  <img width="1920" height="5692" alt="image" src="https://github.com/user-attachments/assets/c670227e-da65-4f37-bedd-c94f3e4a9902" />
+
+* **Complete order & payment
+  <img width="1920" height="1388" alt="image" src="https://github.com/user-attachments/assets/01e000fb-e0a0-4720-ac4a-0552487b6616" />
+  <img width="1920" height="1028" alt="image" src="https://github.com/user-attachments/assets/cadfbf2f-88b7-4e46-a9e7-3b9444e66517" />
 
 ---
 
