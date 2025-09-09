@@ -22,7 +22,6 @@ export const OrdersProvider = ({ children }) => {
 
   useEffect(() => {
     if (!user) {
-      setOrders([]);
       return;
     }
 
