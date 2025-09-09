@@ -60,7 +60,7 @@ export default function MyOrders() {
 
               const status = getOrderStatus(order);
               const isEditable =
-                status === "Pending" || status === "Confirmed";
+                status === "Pending" || status === "Confirmed" || status === "Processing";
 
               return (
                 <li
