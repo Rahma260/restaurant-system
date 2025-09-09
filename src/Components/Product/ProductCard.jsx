@@ -8,19 +8,16 @@ function ProductCard({ item, category, isFavorite, toggleFavorite, handleAddToCa
   return (
     <Link
       key={`${category.id}-${item.id}`}
-      to={`${item.id}`}
+      to={`/products/${item.categoryId}/${item.id}`}
       className="w-full sm:w-60 bg-white rounded-xl shadow-lg overflow-hidden group relative"
     >
       <div className="flex justify-center mt-6">
         <div className="w-60 h-60 rounded-full bg-gradient-to-br from-red-50 to-red-200 flex items-center justify-center">
-          <Link to={`/products/${item.categoryId}/${item.id}`}>
-            <img
-              src={item.image || "/images/placeholder.png"}
-              alt={item.name}
-              className="w-52 h-52 object-cover rounded-full"
-            />
-          </Link>
-
+          <img
+            src={item.image || "/images/placeholder.png"}
+            alt={item.name}
+            className="w-52 h-52 object-cover rounded-full"
+          />
         </div>
       </div>
 
