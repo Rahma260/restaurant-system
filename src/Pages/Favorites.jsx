@@ -46,16 +46,17 @@ function Favorites() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  {/* زر إضافة للعربة */}
                   <button
-                    onClick={() => addToCart(item)}
+                    onClick={() => {
+                      addToCart(item);
+                      toggleFavorite(item);
+                    }}
                     className="text-green-600 hover:text-green-800"
                     title="إضافة إلى العربة"
                   >
                     <ShoppingCart />
                   </button>
 
-                  {/* زر الحذف */}
                   <button
                     onClick={() => toggleFavorite(item)}
                     className="text-red-500 hover:text-red-700"
@@ -75,7 +76,7 @@ function Favorites() {
             </button>
           </div>
         )}
-      </div>
+      </div >
       <Footer />
     </>
   );

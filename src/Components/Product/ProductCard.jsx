@@ -69,12 +69,13 @@ function ProductCard({ item, category, isFavorite, toggleFavorite, handleAddToCa
         <button
           onClick={(e) => {
             e.preventDefault();
-            handleAddToCart({ ...item, categoryId: category.id });
+            navigate(`/products/${category.id}/${item.id}`);
           }}
           className="mt-4 px-6 py-2 bg-red-950 text-white font-semibold rounded-md hover:bg-white border-2 hover:text-red-950 hover:border-red-950 transition"
         >
           اطلب الآن
         </button>
+
       </div>
     </Link>
   );

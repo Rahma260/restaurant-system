@@ -19,7 +19,6 @@ export const CartProvider = ({ children }) => {
     setCartItems(savedCart ? JSON.parse(savedCart) : []);
   }, [storageKey, loading]);
 
-  // حفظ أي تغيير
   useEffect(() => {
     if (loading) return;
     localStorage.setItem(storageKey, JSON.stringify(cartItems));
@@ -33,15 +32,15 @@ export const CartProvider = ({ children }) => {
       if (existingItem) {
         return prevCart.map((item) =>
           item.uniqueKey === uniqueKey
-            ? { ...item, quantity: item.quantity + 1 }
+            ? { ...item, quantity: item.quantity + (product.quantity || 1) }
             : item
         );
       } else {
-        return [...prevCart, { ...product, quantity: 1, uniqueKey }];
+        return [...prevCart, { ...product, quantity: product.quantity || 1, uniqueKey }];
       }
     });
 
-    setMessage(` تمت إضافة المنتج للسلة`);
+    setMessage(`تمت إضافة المنتج للسلة`);
     setTimeout(() => setMessage(""), 3000);
   };
 
