@@ -17,7 +17,7 @@
 
 * **Responsive Design:** Works perfectly on desktop, tablet, and mobile.
 * **Menu Browsing:** View dishes with images, descriptions, and prices.
-* **Authentication: **User can login, register, and logout with applying protected paths.
+* **Authentication:** User can login, register, and logout with applying protected paths.
 * **Category Filtering:** Filter dishes by categories, prices, and ratings.
 * **Search Functionality:** Search for dishes by name.
 * **Shopping Cart:** Add and remove items easily.
