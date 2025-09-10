@@ -107,6 +107,10 @@ npm run dev
   <img width="1920" height="1388" alt="image" src="https://github.com/user-attachments/assets/01e000fb-e0a0-4720-ac4a-0552487b6616" />
   <img width="1920" height="1028" alt="image" src="https://github.com/user-attachments/assets/cadfbf2f-88b7-4e46-a9e7-3b9444e66517" />
 
+* **About & Contact us
+  <img width="1920" height="1526" alt="image" src="https://github.com/user-attachments/assets/ca0ffb2f-29db-4ad4-8d22-61b246766766" />
+  <img width="1920" height="1375" alt="image" src="https://github.com/user-attachments/assets/44d9be63-6e2a-486f-919c-00cbad301d2a" />
+
 ---
 
 ## Contact
