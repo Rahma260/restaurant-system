@@ -75,7 +75,8 @@ npm run dev
 
 * Browse the menu and click on any dish to view details.
 * Use filters to view specific dishes.
-* Add items to the cart.
+* Add items to the cart and wishlist.
+* Make orders with tracking order status.
 * Interact with UI elements and hover animations for a smooth experience.
 
 ---
@@ -87,13 +88,17 @@ npm run dev
 * **Menu Page:**
 <img width="1920" height="2632" alt="image" src="https://github.com/user-attachments/assets/9ebfe8f4-7d79-4dfe-80f9-26bebb97a1e8" />
 
-* **Dish Details / Cart:**
+* **Dish Details / Cart / Wishlist:**
 <img width="1920" height="1395" alt="image" src="https://github.com/user-attachments/assets/105bcfe4-ee62-4b9c-811d-5bbd9af9b545" />
 <img width="1920" height="1882" alt="image" src="https://github.com/user-attachments/assets/e8e83e60-0e6a-45ce-8d55-9f08927fb72c" />
+<img width="1920" height="1395" alt="image" src="https://github.com/user-attachments/assets/fe399d50-624b-4987-b0de-7c5b0089276c" />
 
-* **Login & Register
+
+* **Login & Register & Profile
   <img width="1920" height="868" alt="image" src="https://github.com/user-attachments/assets/bf88bb4c-7b4e-4dae-9793-eafe57b79f32" />
   <img width="1920" height="1107" alt="image" src="https://github.com/user-attachments/assets/0544b629-97a6-4b56-abfb-497730a56e6e" />
+  <img width="1920" height="1066" alt="image" src="https://github.com/user-attachments/assets/59873b44-43cf-40e5-8234-6528382aef2f" />
+
   
 * **Orders
   <img width="1920" height="5692" alt="image" src="https://github.com/user-attachments/assets/c670227e-da65-4f37-bedd-c94f3e4a9902" />
